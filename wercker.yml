@@ -13,8 +13,5 @@ build:
         name: cat mongo conf
         code: cat /etc/mongodb.conf
     - script:
-        name: test connection
-        code: curl http://localhost:28017
-    - script:
         name: run laika
         code: laika
