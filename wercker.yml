@@ -13,5 +13,8 @@ build:
         name: cat mongo conf
         code: cat /etc/mongodb.conf
     - script:
+        name: ps aux
+        code: ps aux
+    - script:
         name: run laika
         code: laika
