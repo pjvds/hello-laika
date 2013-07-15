@@ -8,7 +8,7 @@ build:
           echo "npm version $(npm -v) runnin:g"
     - script:
         name: install laika
-        code: npm install laika
+        code: npm install -g laika
     - script:
         name: run laika
         code: laika
