@@ -2,13 +2,13 @@ box: mies/meteor
 build:
   steps:
      - script:
-          name: echo nodejs information
-          code: |
-              echo "node version $(node -v) running"
-              echo "npm version $(npm -v) runnin:g"
+        name: echo nodejs information
+        code: |
+          echo "node version $(node -v) running"
+          echo "npm version $(npm -v) runnin:g"
     - script:
-          name: install laika
-          code: npm install laika
+        name: install laika
+        code: npm install laika
     - script:
-          name: run laika
-          code: laika
+        name: run laika
+        code: laika
