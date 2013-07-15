@@ -10,5 +10,8 @@ build:
         name: install laika
         code: sudo npm install -g laika
     - script:
+        name: test connection
+        code: sudo service mongodb status
+    - script:
         name: run laika
         code: laika
