@@ -1,7 +1,7 @@
 box: mies/meteor
 build:
   steps:
-     - script:
+    - script:
         name: echo nodejs information
         code: |
           echo "node version $(node -v) running"
