@@ -11,7 +11,7 @@ build:
         code: sudo npm install -g laika
     - script:
         name: test connection
-        code: sudo service mongodb status
+        code: curl http://localhost:28017
     - script:
         name: run laika
         code: laika
