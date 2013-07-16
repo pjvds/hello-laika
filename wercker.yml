@@ -19,5 +19,8 @@ build:
         name: ps aux
         code: ps aux
     - script:
+        name: explictly update meteor
+        code: meteor update
+    - script:
         name: run laika
         code: laika -D
