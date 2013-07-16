@@ -18,9 +18,6 @@ build:
         name: install laika
         code: sudo npm install -g laika
     - script:
-        name: cat mongo conf
-        code: cat /etc/mongodb.conf
-    - script:
         name: ps aux
         code: ps aux
     - script:
@@ -29,3 +26,4 @@ build:
     - script:
         name: run laika
         code: laika -D
+
