@@ -17,4 +17,4 @@ build:
         code: ps aux
     - script:
         name: run laika
-        code: laika
+        code: laika -D
