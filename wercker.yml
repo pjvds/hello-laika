@@ -5,7 +5,9 @@ build:
   steps:
     - script:
         name: set mongo url for meteor
-        code: export MONGO_URL="mongo://$WERCKER_MONGODB_HOST:$WERCKER_MONGODB_PORT"
+        code: |
+            export MONGO_URL="mongo://$WERCKER_MONGODB_HOST:$WERCKER_MONGODB_PORT"
+            echo $MONGO_URL
     - script:
         name: own home
         code: sudo chown -R ubuntu /home/ubuntu
@@ -25,5 +27,5 @@ build:
         code: meteor update
     - script:
         name: run laika
-        code: laika -D
+        code: MONGO_URL="mongo://$WERCKER_MONGODB_HOST:$WERCKER_MONGODB_PORT" laika -D
 
